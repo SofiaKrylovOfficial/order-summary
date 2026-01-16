@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { 
+      font-size: 11px; text-align: center; margin: 0px; margin-top: 10px;
+    }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+    /* under this comment is first try of task */
+    /* body{
+      font-family: 'Red Hat Display', sans-serif;
+      background-color: hsl(225, 100%, 94%);
+      place-items: center;
+    }
+
+    .change-link{
+      text-decoration: underline  ;
+    }
+    .block{
+      width: 400px;
+      height: 600px;
+      background-color: #ffffff;
+      
+      text-align: center;
+      border-radius: 16px;
+    }
+    .listner{
+      width: 400px;
+      border-radius: 16px 16px 0 0;
+      object-fit: contain;
+
+    }
+    .order-sum{
+      font-size: 24px;
+      font-weight: 900;
+    }
+    .p-you-can-listen{
+      width: 300px;
+      margin-left: 50px;
+      font-size: 16px;
+      font-weight: 500;
+      
+    }
+    .annual-plan{
+      display: flex;
+      align-items: center;
+      width: 400px;
+      font:16px solid gray;
+    }
+    .annual-plan a{
+      margin-left: auto;
+    
+    }
+    .annual-plan p{
+      display: block;
+    }
+    .btn{
+      display: inline-block;
+      width: 200px;
+      height: 100px;
+
+    } */
+
+
+   
+    body{
+      min-height: 666px;
+      display: grid;
+      place-items: center;
+      justify-content: center;
+      background-image: url(/images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      height: 100%;
+      background-color: hsl(225, 100%, 94%);
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    .block{
+      
+      width:410px;
+      height:610px;
+      background-color: #fff;
+      border-radius: 12px;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      height: 380px;
+      gap: 0px;
+      
+      text-align: center;
+} 
+    .illustration{
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+      object-fit: contain;
+      justify-content: left;
+      display: block;
+    }
+    .h1{
+      font: 25px solid black;
+      margin: 0px;
+      margin-top: 35px;
+      font-weight: 900;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    .p{
+      color:  hsl(224, 23%, 55%);
+      width: 300px;
+      margin: auto;
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 400;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+    .annual-plan{
+      display: flex;
+      align-items: center;
+      background-color: rgb(248, 249, 254);
+      border-radius: 10px;
+      width: 310px;
+      height: 90px;
+      margin: auto;
+      margin-bottom: 15px;
+      padding-left: 17px;
+      gap: 0px;
+      margin-top: 0px;
+    }
+    .icon{
+      display: block;
+      width: 45px;
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+    .h2{
+      font: 15px solid black;
+      margin: 0px;
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 900;
+    }
+    .span{
+      font-size: 14px;
+      color:  hsl(224, 23%, 55%); 
+      margin: 0px;
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 400;
+    }
+    .a{
+      margin-left: auto;
+      font-size: 12px;
+      text-decoration: underline;
+      color:  hsl(245, 75%, 52%);
+      font-weight: 900;
+      margin-right: 23px;
+    }
+    .btn1{
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      width: 320px;
+      height: 50px;
+      font-size: 15px;
+      border-radius: 7px;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 10px 16px rgba(56, 41, 224, 0.3);
+    }
+    .btn2{
+    color:  hsl(224, 23%, 55%);
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 900;
+    margin-top: 0px;
+  }
+  </style>
+</head>
+<body>
+  <!-- first try html -->
+<!-- <div class="block">
+  <img src="/images/illustration-hero.svg" alt="" class="listner">
+  <h1 class="order-sum">Order Summary</h1>
+  <p class="p-you-can-listen">
+    You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+  </p>
+  <div class="annual-plan">
+    <img src="/images/icon-music.svg" alt="">
+    <h2 class="h2">Annual Plan</h2>
+    <p class="h2">$59.99/year</p>
+    <a href="#" class="change-link">Change</a>
+  </div>
+    <div class="btn">
+  <button class="payment-btn">Proceed to Payment</button>
+  <button class="cancel-order">Cancel Order</button>
+</div> -->
+  
+  <div>
+    <div class="block">
+      <img src="/images/illustration-hero.svg" alt="illustration-hero" class="illustration">
+      <div class="content">
+        <h1 class="h1">Order Summary</h1>
+        <p class="p">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+        <div class="annual-plan">
+          <div class="div-icon"><img src="/images/icon-music.svg" alt="icon-music" class="icon"></div>
+          <div class="text">
+            <h2 class="h2">Annual Plan</h2>
+            <span class="span">$59.99/year</span>
+          </div>
+          <a class="a">Change</a>
+        </div>
+        <div class="btn1">Proceed to Payment</div>
+        <div class="btn2">Cancel Order</div>
+      </div>
+    
+    </div>
+    <div class="attribution">
+      Challenge by <a target="_blank" href="https://www.frontendmentor.io?ref=challenge" >Frontend Mentor</a>.
+      Coded by <a target="_blank" href="https://github.com/SofiaKrylovOfficial">Sofia Krylov</a>
+    </div>
+  </div>
+</body>
+</html>
